@@ -1,0 +1,46 @@
+{
+  "auto_install_extensions": {
+    "make": true,
+    "neocmake": true,
+    "nix": true,
+    "rose-pine-theme": true,
+    "vscode-icons": true
+  },
+  "buffer_font_size": 14,
+  "languages": {
+    "C++": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "arguments": [
+            "--query-driver=/nix/store/*"
+          ],
+          "command": "clang-format"
+        }
+      }
+    },
+    "Nix": {
+      "format_on_save": "on",
+      "formatter": {
+        "external": {
+          "command": "nixpkgs-fmt"
+        }
+      }
+    }
+  },
+  "load_direnv": "direct",
+  "lsp": {
+    "clangd": {
+      "binary": {
+        "path": "clangd"
+      }
+    },
+    "nil": {
+      "binary": {
+        "path": "nil"
+      }
+    }
+  },
+  "theme": "Rosé Pine Dawn",
+  "ui_font_size": 15
+}
